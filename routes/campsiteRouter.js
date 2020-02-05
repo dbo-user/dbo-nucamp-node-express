@@ -28,7 +28,6 @@ campsiteRouter.route('/')
 
 
 campsiteRouter.route('/:campsiteId')
-
 .all((req, res, next) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
@@ -49,11 +48,6 @@ campsiteRouter.route('/:campsiteId')
 .delete((req, res) => {
     res.end(`Deleting campsite: ${req.params.campsiteId}`);
 });
-
-
-
-
-
 
 
 module.exports = campsiteRouter;
